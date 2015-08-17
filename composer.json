@@ -1,0 +1,26 @@
+{
+	"name" : "dasred/translation-finder",
+	"description" : "finds content for translations in a php project",
+
+	"prefer-stable" : true,
+	"minimum-stability" : "dev",
+
+	"require" : {
+		"php": ">=5.5",
+		"dasred/zend-console" : "@stable",
+		"dasred/zend-log" : "@stable",
+		"zendframework/zend-i18n" : "@stable",
+		"phpunit/php-file-iterator" : "@stable"
+	},
+
+	"autoload" : {
+		"psr-4" : {
+			"DasRed\\Finder\\" : "src/"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"DasRedTest\\Finder\\" : "test/"
+		}
+	}
+}
